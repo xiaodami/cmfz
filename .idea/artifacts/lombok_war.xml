@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lombok:war">
+    <output-path>$PROJECT_DIR$/../lombok/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>lombok</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="lombok.war">
+      <element id="artifact" artifact-name="lombok:war exploded" />
+    </root>
+  </artifact>
+</component>

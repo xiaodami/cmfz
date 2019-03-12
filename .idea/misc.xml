@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../lom" />
+    <file type="web" url="file://$PROJECT_DIR$/../lombok" />
+    <file type="web" url="file://$PROJECT_DIR$/../lombook" />
+    <file type="web" url="file://$PROJECT_DIR$/../mi" />
+    <file type="web" url="file://$PROJECT_DIR$/../testMaven" />
+    <file type="web" url="file://$PROJECT_DIR$/../TESTMVN" />
+    <file type="web" url="file://$PROJECT_DIR$/../testSpringBoot" />
+    <type id="Spring" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../testMaven/pom.xml" />
+        <option value="$PROJECT_DIR$/../demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../lombok/pom.xml" />
+        <option value="$PROJECT_DIR$/../lom/pom.xml" />
+        <option value="$PROJECT_DIR$/upload/pom.xml" />
+        <option value="$PROJECT_DIR$/../down/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../lombok/aa/pom.xml" />
+        <option value="$PROJECT_DIR$/../lombok/pom.xml" />
+        <option value="$PROJECT_DIR$/../lombook/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

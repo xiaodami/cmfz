@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.MeunDao">
+  <select id="selectByParentId" resultType="Meun">
+  	select id,title,href,ICONCLS,PARENTID from meun
+  	<where>
+  		<if test="pid==null">
+  			parentid is null
+  		</if>
+  		<if test="pid!=null">
+  			parentid=#{pid}
+  		</if>
+  	</where>
+  	order by id
+  </select>
+  <select id="selectObject" >
+  	 select * from ${s}
+  </select>
+</mapper>

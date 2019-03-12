@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="down" />
+        <module name="lom" />
+        <module name="testMaven" />
+        <module name="upload" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aa" target="1.7" />
+      <module name="demo" target="1.8" />
+      <module name="down" target="1.8" />
+      <module name="lom" target="1.8" />
+      <module name="lombok" target="1.7" />
+      <module name="lombook" target="1.7" />
+      <module name="mi" target="1.7" />
+      <module name="testMaven" target="1.7" />
+      <module name="TESTMVN" target="1.7" />
+      <module name="testSpringBoot" target="1.7" />
+      <module name="tu" target="1.8" />
+      <module name="upload" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="down" options="-parameters" />
+      <module name="lom" options="-parameters" />
+      <module name="testSpringBoot" options="" />
+      <module name="tu" options="-parameters" />
+      <module name="upload" options="-parameters" />
+    </option>
+  </component>
+</project>

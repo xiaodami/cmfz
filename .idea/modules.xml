@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../aaaa/aaaa.iml" filepath="$PROJECT_DIR$/../aaaa/aaaa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmfz.iml" filepath="$PROJECT_DIR$/cmfz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../demo/demo.iml" filepath="$PROJECT_DIR$/../demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../down/down.iml" filepath="$PROJECT_DIR$/../down/down.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lom/lom.iml" filepath="$PROJECT_DIR$/../lom/lom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mi/mi.iml" filepath="$PROJECT_DIR$/../mi/mi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../testSpringBoot/testSpringBoot.iml" filepath="$PROJECT_DIR$/../testSpringBoot/testSpringBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/upload/upload.iml" filepath="$PROJECT_DIR$/upload/upload.iml" />
+    </modules>
+  </component>
+</project>

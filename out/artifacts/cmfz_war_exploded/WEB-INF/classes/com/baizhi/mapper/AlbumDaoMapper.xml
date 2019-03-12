@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.AlbumDao">
+  <!-- <select id="selectByParentId" resultType="Meun">
+  	select id,title,href,ICONCLS,PARENTID from meun
+  	<where>
+  		<if test="pid==null">
+  			parentid is null
+  		</if>
+  		<if test="pid!=null">
+  			parentid=#{pid}
+  		</if>
+  	</where>
+  	order by id
+  </select>
+  <select id="selectObject" >
+  	 select * from ${s}
+  </select> -->
+  
+  <resultMap type="Album" id="AlbMap">
+  	<id property="id" column="id"/>
+  	<result property="title" column="title"/>
+  	<result property="score" column="score"/>
+  	<result property="brodcast" column="brodcast"/>
+  	<result property="author" column="author"/>
+  	<result property="brief" column="brief"/>
+  	<result property="count" column="count"/>
+  	<result property="publicTime" column="publicTime"/>
+  	<result property="coverimg" column="coverimg"/>
+  	<result property="status" column="status"/>
+  	<collection property="children" ofType="Chapter">
+  		<id property="id" column="cid"/>
+  		<result property="title" column="ctitle"/>
+  		<result property="url" column="curl"/>
+  		<result property="size" column="csize"/>
+  		<result property="duration" column="cduration"/>
+  		<result property="createTime" column="ccreateTime"/>
+  		<result property="ext1" column="ext1"/>
+  	</collection>
+  </resultMap>
+  <select id="queryAll" resultMap="AlbMap">
+  	select a.id id,a.title title,a.score score,a.brodcast brodcast,a.author author,a.brief brief,a.publicTime publicTime,
+  	a.coverimg coverimg,a.status status,c.id cid,c.title ctitle,c.url curl,c.size csize,c.duration cduration,c.createTime ccreateTime,
+  	c.ext1 cext1
+  	 from album a left join chapter c on a.id=c.ext1
+  </select>
+  
+  <insert id="insert">
+  	insert into Album values(#{id},#{title},#{score},#{brodcast},#{author},#{brief},#{publicTime},#{count},#{coverimg},#{status},"","","","","")
+  </insert>
+</mapper>

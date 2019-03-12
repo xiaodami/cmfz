@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lombook:war">
+    <output-path>$PROJECT_DIR$/../lombook/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>lombook</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="lombook.war">
+      <element id="artifact" artifact-name="lombook:war exploded" />
+    </root>
+  </artifact>
+</component>

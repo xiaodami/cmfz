@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TESTMVN:war">
+    <output-path>$PROJECT_DIR$/../TESTMVN/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>TESTMVN</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="TESTMVN-1.0-SNAPSHOT REALSE.war">
+      <element id="artifact" artifact-name="TESTMVN:war exploded" />
+    </root>
+  </artifact>
+</component>
